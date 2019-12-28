@@ -1,0 +1,22 @@
+language: bash
+
+services:
+- docker
+
+env:
+  matrix:
+  - PYTHON_VER=3.6.5 TAGS=3.6.5,latest
+  - PYTHON_VER=3.6.5 TAGS=3.6-dev 3-dev dev PYTHON_DEV=1
+
+script:
+- make 
+
+after_success:
+- . "${TRAVIS_BUILD_DIR}/release.sh"
+
+notifications:
+  email:
+    recipients:
+    - charlessoft@qq.com
+    on_success: never
+    on_failure: always
