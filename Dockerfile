@@ -1,5 +1,5 @@
 ARG PYTHON_VER
-FROM charlessoft/python:${PTHON_VER}
+FROM charlessoft/python:${PYTHON_VER}
 MAINTAINER qian chen <charlessoft@qq.com>
 
 COPY ./requirements.txt /tmp/requirements.txt

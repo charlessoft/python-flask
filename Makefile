@@ -1,6 +1,6 @@
 -include env_make
 
-PYTHON_VER ?= 3.6.5
+PYTHON_VER ?= 3.6
 
 REPO = charlessoft/python
 NAME = python-$(PYTHON_VER)
