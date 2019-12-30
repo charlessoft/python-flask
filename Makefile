@@ -3,7 +3,7 @@
 PYTHON_VER ?= 3.6
 
 REPO = charlessoft/python
-NAME = python-$(PYTHON_VER)
+NAME = python-flask-$(PYTHON_VER)
 
 ifneq ($(STABILITY_TAG),)
     ifneq ($(TAG),latest)
