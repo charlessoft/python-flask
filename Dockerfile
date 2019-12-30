@@ -139,7 +139,7 @@ EXPOSE 80
 EXPOSE 443
 
 # Install uWSGI
-RUN apk add --no-cache uwsgi-python3
+# RUN apk add --no-cache uwsgi-python3
 
 # Make NGINX run on the foreground
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
